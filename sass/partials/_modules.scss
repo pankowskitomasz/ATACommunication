@@ -1,0 +1,16 @@
+.bg{
+    &-black{
+        background-color: $color-black;
+    }
+}
+.fixed-size{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.tile{
+    height: $tile-height;
+}
+nav{
+    z-index: 100;
+}

@@ -1,0 +1,51 @@
+/* line 1, ../sass/partials/_layout.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 4, ../sass/partials/_layout.scss */
+body, html {
+  height: 100%;
+}
+
+/* line 8, ../sass/partials/_mixins.scss */
+.index-s1 {
+  min-height: 100vh;
+}
+
+/* line 8, ../sass/partials/_mixins.scss */
+.index-s3 {
+  min-height: 50vh;
+}
+
+/* line 8, ../sass/partials/_mixins.scss */
+.index-s2 {
+  min-height: 33vh;
+}
+
+/* line 8, ../sass/partials/_mixins.scss */
+.index-s4 {
+  min-height: 33vh;
+}
+
+/* line 2, ../sass/partials/_modules.scss */
+.bg-black {
+  background-color: #000;
+}
+
+/* line 6, ../sass/partials/_modules.scss */
+.fixed-size {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* line 11, ../sass/partials/_modules.scss */
+.tile {
+  height: 75px;
+}
+
+/* line 14, ../sass/partials/_modules.scss */
+nav {
+  z-index: 100;
+}

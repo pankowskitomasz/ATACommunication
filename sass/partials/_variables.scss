@@ -1,8 +1,10 @@
 $color-black: #000;
 $color-gray: #999;
+$color-dark-gray: #444;
 $height-full: 100vh;
 $height-half: 50vh;
 $height-third: 33vh;
+$index-s4__left-col-bg: "../img/at_logo_blanc.png";
 $section-full-height:
     "index-s1";
 $section-half-height:
@@ -11,5 +13,5 @@ $section-third-height:
     "index-s2",
     "index-s4";
 $text-shadow-black: 0 2px 5px black;
-$text-shadow-gray: 0 1px 3px $color-gray;
+$text-shadow-gray: 0 1px 3px $color-dark-gray;
 $tile-height: 75px;

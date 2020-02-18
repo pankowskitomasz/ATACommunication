@@ -8,22 +8,22 @@ body, html {
   height: 100%;
 }
 
-/* line 8, ../sass/partials/_mixins.scss */
+/* line 15, ../sass/partials/_mixins.scss */
 .index-s1 {
   min-height: 100vh;
 }
 
-/* line 8, ../sass/partials/_mixins.scss */
+/* line 15, ../sass/partials/_mixins.scss */
 .index-s3 {
   min-height: 50vh;
 }
 
-/* line 8, ../sass/partials/_mixins.scss */
+/* line 15, ../sass/partials/_mixins.scss */
 .index-s2 {
   min-height: 33vh;
 }
 
-/* line 8, ../sass/partials/_mixins.scss */
+/* line 15, ../sass/partials/_mixins.scss */
 .index-s4 {
   min-height: 33vh;
 }
@@ -33,19 +33,64 @@ body, html {
   background-color: #000;
 }
 
-/* line 6, ../sass/partials/_modules.scss */
+/* line 7, ../sass/partials/_modules.scss */
+.border-gray {
+  border-color: #999;
+}
+
+/* line 11, ../sass/partials/_modules.scss */
 .fixed-size {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
 }
 
-/* line 11, ../sass/partials/_modules.scss */
+/* line 18, ../sass/partials/_modules.scss */
+.font-size-35 {
+  font-size: 35px;
+}
+
+/* line 23, ../sass/partials/_modules.scss */
+.index-s4__left-col {
+  background-image: url("../img/at_logo_blanc.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* line 26, ../sass/partials/_modules.scss */
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+/* line 31, ../sass/partials/_modules.scss */
+.text-shadow-black {
+  text-shadow: 0 2px 5px black;
+}
+/* line 34, ../sass/partials/_modules.scss */
+.text-shadow-gray {
+  text-shadow: 0 1px 3px #444;
+}
+
+/* line 39, ../sass/partials/_modules.scss */
 .tile {
   height: 75px;
 }
 
-/* line 14, ../sass/partials/_modules.scss */
+/* line 43, ../sass/partials/_modules.scss */
+.visible-hover {
+  cursor: pointer;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-in-out;
+}
+/* line 44, ../sass/partials/_modules.scss */
+.visible-hover:hover {
+  opacity: 0.9;
+}
+
+/* line 54, ../sass/partials/_modules.scss */
 nav {
   z-index: 100;
 }

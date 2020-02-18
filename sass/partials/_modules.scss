@@ -3,13 +3,53 @@
         background-color: $color-black;
     }
 }
+.border{
+    &-gray{
+        border-color: $color-gray;
+    }
+}
 .fixed-size{
     width: 100vw;
     height: 100vh;
     object-fit: cover;
 }
+.font{
+    &-size{
+        &-35{
+            font-size: 35px;
+        }
+    }
+}
+.index-s4__left-col{
+    @include set-bg-center($index-s4__left-col-bg);
+}
+.overflow-x-hidden{
+    overflow-x: hidden;
+}
+.text{
+    &-shadow{
+        &-black{
+            text-shadow: $text-shadow-black;
+        }
+        &-gray{
+            text-shadow: $text-shadow-gray;
+        }
+    }
+}
 .tile{
     height: $tile-height;
+}
+.visible{
+    &-hover{
+        &:hover{
+            opacity: 0.9;
+        }
+        cursor: pointer;
+        opacity:0;
+        transition-property: opacity;
+        transition-duration: 0.6s;
+        transition-timing-function: ease-in-out;
+    }
 }
 nav{
     z-index: 100;

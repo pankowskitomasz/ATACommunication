@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+        <link rel="icon" href="img/favicon.png">
+        <link rel="stylesheet" type="text/css" href="css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.min.css">
+        <title>ATA Communication | Our team</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-light navbar-expand-md container-fluid shadow-lg
+            border-bottom border-secondary">
+            <div class="row w-100 mx-0">
+                <div class="col-12">
+                    <div class="list-inline text-right">
+                        <a class="list-inline-item text-secondary icon" 
+                            href="https://www.facebook.com"
+                            rel="noreferrer noopener nofollow">
+                            <span class="fab fa-facebook h3"></span>
+                        </a>
+                        <a class="list-inline-item text-secondary icon"
+                            href="https://www.twitter.com"
+                            rel="noreferrer noopener nofollow">
+                            <span class="fab fa-twitter h3"></span>
+                        </a>
+                        <a class="list-inline-item text-secondary icon"
+                            href="user.php">
+                            <span class="fas fa-user-circle h3"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <a href="index.html" class="navbar-brand icon">
+                        <img src="img/logo_inv.png" alt="Company logo">
+                    </a>
+                    <button class="navbar-toggler float-right border-secondary my-3"
+                        data-toggle="collapse"
+                        data-target="#main-nav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="main-nav">
+                        <ul class="nav navbar-nav ml-auto font-weight-bold font-menu">
+                            <li class="nav-item icon">
+                                <a href="index.html" class="nav-link text-secondary">
+                                    <span class="fa fa-home"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item icon">
+                                <a href="team.html" class="nav-link text-secondary">Our Team</a>
+                            </li>
+                            <li class="nav-item icon">
+                                <a href="projects.html" class="nav-link text-secondary">Projects</a>
+                            </li>
+                            <li class="nav-item icon">
+                                <a href="contact.html" class="nav-link text-secondary">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="contact-s1 container-fluid bg-success">
+            <div class="row">
+                <div class="col-12 col-sm-6 contact-s1__left-col min-h-50"></div>
+                <div class="col-12 col-sm-6 p-5 text-center text-sm-left d-flex">
+                    <div class="my-auto w-100 font-menu text-light">
+                        <h4 class="text-uppercase text-center font-weight-bold font-header">
+                            Find us:
+                        </h4>
+                        <p class="initialism">
+                            ATA Communication
+                        </p>
+                        <ul class="list-unstyled pl-0 pl-sm-4">
+                            <li>LONDON, UK</li>
+                            <li>WA11D1</li>
+                            <li>ABC STREET 12</li>
+                            <li>00 123 456 678</li>
+                        </ul>
+                        <p class="initialism">
+                            Office hours:
+                        </p>
+                        <ul class="list-unstyled pl-0 pl-sm-4">
+                            <li>Mon: 9:00<sup>AM</sup> - 6:00<sup>PM</sup></li>
+                            <li>Tue: 9:00<sup>AM</sup> - 6:00<sup>PM</sup></li>
+                            <li>Wed: 10:00<sup>AM</sup> - 7:00<sup>PM</sup></li>
+                            <li>Thu: 9:00<sup>AM</sup> - 6:00<sup>PM</sup></li>
+                            <li>Fri: 9:00<sup>AM</sup> - 4:00<sup>PM</sup></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>            
+        <section class="contact-s2 container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-6 min-h-50" id="pointsmap"></div>
+                <div class="col-12 col-sm-6 p-5 text-center text-sm-left d-flex">
+                    <div class="my-auto mx-auto w-100">
+                        <h4 class="text-uppercase text-center font-weight-bold font-header">
+                        Contact us:
+                        </h4>
+                        <form class="contact-form" method="post" action="error.php#message" autocomplete="off" onsubmit="return checkForm()">
+                            <fieldset>
+                                <legend class="initialism">Personal data</legend>
+                                <input class="form-control rounded-0 mb-2" 
+                                    type="text" 
+                                    name="fname" 
+                                    maxlength="30" 
+                                    placeholder="First name" 
+                                    tabindex="1" 
+                                    required>
+                                <input class="form-control rounded-0 mb-2" 
+                                    type="text" 
+                                    name="lname" 
+                                    maxlength="30" 
+                                    placeholder="Last name" 
+                                    tabindex="2" 
+                                    required>
+                                <input class="form-control rounded-0 mb-2" 
+                                    type="tel" 
+                                    name="fphone" 
+                                    maxlength="15" 
+                                    placeholder="Phone" 
+                                    tabindex="3" 
+                                    required>
+                                <input class="form-control rounded-0 mb-2" 
+                                    type="email" 
+                                    name="fmail" 
+                                    maxlength="50" 
+                                    placeholder="Email" 
+                                    tabindex="4" 
+                                    required>
+                            </fieldset>
+                            <fieldset class="mt-3">
+                                <legend class="initialism">Your message</legend>
+                                <textarea class="form-control rounded-0 mb-3" 
+                                    name="fmsg" 
+                                    maxlength="150" 
+                                    tabindex="5" 
+                                    required></textarea>
+                            </fieldset>
+                            <div class="w-100 text-center text-sm-right">
+                                <input class="btn btn-outline-secondary rounded-0" 
+                                    type="reset" 
+                                    value="Clear" 
+                                    tabindex="7">
+                                <input class="btn btn-outline-secondary rounded-0" 
+                                    type="submit" 
+                                    value="Send" 
+                                    tabindex="6">
+                            </div>
+                        </form>     
+                    </div>      
+                </div>
+            </div>
+        </section>
+        <footer class="container-fluid bg-black pt-3 px-4">
+            <div class="row">
+                <div class="col-12 col-sm-6 text-center text-sm-left">
+                    <figure class="figure">
+                        <img class="figure-img" src="img/logo.png">
+                        <figcaption class="figure-caption text-white">
+                            <small class="initialism">
+                                <span class="font-weight-bold">ATA Communication</span>
+                                <address>
+                                    LONDON, UK<br/>
+                                    WA11D1,<br/>
+                                    ABC STREET 12<br/>
+                                    00 123 456 678
+                                </address>
+                            </small>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-12 col-sm-6 text-center text-sm-right">
+                    <div class="list-inline text-center text-sm-right mb-4">
+                        <a class="list-inline-item text-white icon" 
+                            href="https://www.facebook.com"
+                            rel="noreferrer noopener nofollow">
+                            <span class="fab fa-facebook h5"></span>
+                        </a>
+                        <a class="list-inline-item text-white icon"
+                        href="https://www.twitter.com"
+                        rel="noreferrer noopener nofollow">
+                            <span class="fab fa-twitter h5"></span>
+                        </a>
+                        <a class="list-inline-item text-white icon"
+                        href="user.php">
+                            <span class="fas fa-user-circle h5"></span>
+                        </a>
+                    </div>
+                    <small>
+                        <ul class="list-unstyled initialism font-weight-bold">
+                            <li class="list-unstyled-item mb-2">
+                                <a href="index.html" class="text-white">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item mb-2">
+                                <a href="team.html" class="text-white">
+                                    Our Team
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item mb-2">
+                                <a href="projects.html" class="text-white">
+                                    Projects
+                                </a>
+                            </li>
+                            <li class="list-unstyled-item mb-2">
+                                <a href="contact.html" class="text-white">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </small>
+                </div>
+                <div class="col-12 text-white text-center border-top border-gray">
+                    <small>
+                        Website demo, Copyright &copy; 2020 |
+                        <a href="privacy.html#terms" class="text-white">Privacy</a>
+                    </small>
+                </div>
+            </div>
+        </footer>
+        <script src="js/main.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAh1xIfMS6UqeltTwp9dL-LtRcRb6J9ao8&callback=pointsMap"></script>
+    </body>
+</html>

@@ -8,23 +8,98 @@
         border-color: $color-gray;
     }
 }
+.contact-s1__left-col{
+    @include set-bg-cover($contact-s1__left-col-bg);
+}
 .fixed-size{
     width: 100vw;
     height: 100vh;
     object-fit: cover;
 }
 .font{
+    &-header{
+        font-family: $font-header;
+        letter-spacing: 2px;
+    }
+    &-menu{
+        font-family: $font-menu;
+    } 
     &-size{
         &-35{
             font-size: 35px;
         }
     }
 }
-.index-s4__left-col{
-    @include set-bg-center($index-s4__left-col-bg);
+.grayscale{
+    filter: grayscale(1);
+}
+.icon{
+    &:hover{
+        opacity: $icon-hover-opacity;
+    }
+}
+.index{
+    &-s2{
+        a{
+            img{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            &:hover img{
+                animation-delay: 0.1s;
+                animation-duration: 0.8s;
+                animation-name: vertical-shake;
+            }
+        }
+    }
+    &-s4__left-col{
+        @include set-bg-center($index-s4__left-col-bg);
+    }
+}
+.min-h{
+    &-50{
+        min-height: $height-half;
+    }
+}
+.maxw{
+    &-75vw{
+        max-width: 75vw !important;
+    }
+}
+.opacity{
+    &-9{
+        opacity: 0.9;
+    }
 }
 .overflow-x-hidden{
     overflow-x: hidden;
+}
+.shadow{
+    &-black{
+        text-shadow: $shadow-black;
+    }
+    &-box{
+        box-shadow: $shadow-box;
+    }
+    &-gray{
+        text-shadow: $shadow-gray;
+    }
+}
+.spacer{
+    &-bg{
+        &-1{
+            @include set-bg-cover($spacer-bg-1);
+        }
+        &-2{
+            @include set-bg-cover($spacer-bg-2);
+        }
+        &-3{
+            @include set-bg-cover($spacer-bg-3);
+        }
+        &-4{
+            @include set-bg-cover($spacer-bg-4);
+        }
+    }
 }
 .text{
     &-shadow{
@@ -53,4 +128,30 @@
 }
 nav{
     z-index: 100;
+}
+textarea{
+    resize: none;
+}
+
+@keyframes vertical-shake{
+	20%{
+		margin-bottom: 0px;
+		margin-top: 40px;
+	}
+	40%{
+		margin-bottom: 35px;
+		margin-top: 5px; 
+	}
+	60%{
+		margin-bottom: 10px;
+		margin-top: 30px;
+	}
+	80%{
+		margin-bottom: 25px;
+		margin-top: 15px;
+	}
+	100%{
+		margin-bottom: 15px;
+		margin-top: 25px;
+	}
 }

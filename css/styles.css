@@ -1,3 +1,48 @@
+/* latin */
+@font-face {
+  font-family: 'Acme';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Acme Regular"), local("Acme-Regular"), url(../fonts/RrQfboBx-C5_XxrBbg.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Mitr';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Mitr Regular"), local("Mitr-Regular"), url(../fonts/pxiLypw5ucZF-Sg4Maj_.woff2) format("woff2");
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Mitr';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Mitr Regular"), local("Mitr-Regular"), url(../fonts/pxiLypw5ucZF-TM4Maj_.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Mitr';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Mitr Regular"), local("Mitr-Regular"), url(../fonts/pxiLypw5ucZF-TI4Maj_.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Mitr';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Mitr Regular"), local("Mitr-Regular"), url(../fonts/pxiLypw5ucZF-Tw4MQ.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 /* line 1, ../sass/partials/_layout.scss */
 * {
   box-sizing: border-box;
@@ -11,6 +56,31 @@ body, html {
 /* line 15, ../sass/partials/_mixins.scss */
 .index-s1 {
   min-height: 100vh;
+}
+
+/* line 15, ../sass/partials/_mixins.scss */
+.privacy-s1 {
+  min-height: 100vh;
+}
+
+/* line 15, ../sass/partials/_mixins.scss */
+.privacy-s2 {
+  min-height: 100vh;
+}
+
+/* line 15, ../sass/partials/_mixins.scss */
+.team-s1 {
+  min-height: 100vh;
+}
+
+/* line 15, ../sass/partials/_mixins.scss */
+.contact-s1 {
+  min-height: 50vh;
+}
+
+/* line 15, ../sass/partials/_mixins.scss */
+.contact-s2 {
+  min-height: 50vh;
 }
 
 /* line 15, ../sass/partials/_mixins.scss */
@@ -39,18 +109,55 @@ body, html {
 }
 
 /* line 11, ../sass/partials/_modules.scss */
+.contact-s1__left-col {
+  background-image: url("../img/contact-s1-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+/* line 14, ../sass/partials/_modules.scss */
 .fixed-size {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
 }
 
-/* line 18, ../sass/partials/_modules.scss */
+/* line 20, ../sass/partials/_modules.scss */
+.font-header {
+  font-family: "Acme", sans-serif;
+  letter-spacing: 2px;
+}
+/* line 24, ../sass/partials/_modules.scss */
+.font-menu {
+  font-family: "Mitr", sans-serif;
+}
+/* line 28, ../sass/partials/_modules.scss */
 .font-size-35 {
   font-size: 35px;
 }
 
-/* line 23, ../sass/partials/_modules.scss */
+/* line 33, ../sass/partials/_modules.scss */
+.grayscale {
+  filter: grayscale(1);
+}
+
+/* line 37, ../sass/partials/_modules.scss */
+.icon:hover {
+  opacity: 0.6;
+}
+
+/* line 44, ../sass/partials/_modules.scss */
+.index-s2 a img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 48, ../sass/partials/_modules.scss */
+.index-s2 a:hover img {
+  animation-delay: 0.1s;
+  animation-duration: 0.8s;
+  animation-name: vertical-shake;
+}
+/* line 55, ../sass/partials/_modules.scss */
 .index-s4__left-col {
   background-image: url("../img/at_logo_blanc.png");
   background-position: center center;
@@ -58,26 +165,79 @@ body, html {
   background-size: contain;
 }
 
-/* line 26, ../sass/partials/_modules.scss */
+/* line 60, ../sass/partials/_modules.scss */
+.min-h-50 {
+  min-height: 50vh;
+}
+
+/* line 65, ../sass/partials/_modules.scss */
+.maxw-75vw {
+  max-width: 75vw !important;
+}
+
+/* line 70, ../sass/partials/_modules.scss */
+.opacity-9 {
+  opacity: 0.9;
+}
+
+/* line 74, ../sass/partials/_modules.scss */
 .overflow-x-hidden {
   overflow-x: hidden;
 }
 
-/* line 31, ../sass/partials/_modules.scss */
+/* line 78, ../sass/partials/_modules.scss */
+.shadow-black {
+  text-shadow: 0 1px 2px #000;
+}
+/* line 81, ../sass/partials/_modules.scss */
+.shadow-box {
+  box-shadow: 0 0 4px #333;
+}
+/* line 84, ../sass/partials/_modules.scss */
+.shadow-gray {
+  text-shadow: 0 1px 2px #aaa;
+}
+
+/* line 90, ../sass/partials/_modules.scss */
+.spacer-bg-1 {
+  background-image: url("../img/spacer/spacer-bg-1.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+/* line 93, ../sass/partials/_modules.scss */
+.spacer-bg-2 {
+  background-image: url("../img/spacer/spacer-bg-2.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+/* line 96, ../sass/partials/_modules.scss */
+.spacer-bg-3 {
+  background-image: url("../img/spacer/spacer-bg-3.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+/* line 99, ../sass/partials/_modules.scss */
+.spacer-bg-4 {
+  background-image: url("../img/spacer/spacer-bg-4.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+/* line 106, ../sass/partials/_modules.scss */
 .text-shadow-black {
   text-shadow: 0 2px 5px black;
 }
-/* line 34, ../sass/partials/_modules.scss */
+/* line 109, ../sass/partials/_modules.scss */
 .text-shadow-gray {
   text-shadow: 0 1px 3px #444;
 }
 
-/* line 39, ../sass/partials/_modules.scss */
+/* line 114, ../sass/partials/_modules.scss */
 .tile {
   height: 75px;
 }
 
-/* line 43, ../sass/partials/_modules.scss */
+/* line 118, ../sass/partials/_modules.scss */
 .visible-hover {
   cursor: pointer;
   opacity: 0;
@@ -85,12 +245,40 @@ body, html {
   transition-duration: 0.6s;
   transition-timing-function: ease-in-out;
 }
-/* line 44, ../sass/partials/_modules.scss */
+/* line 119, ../sass/partials/_modules.scss */
 .visible-hover:hover {
   opacity: 0.9;
 }
 
-/* line 54, ../sass/partials/_modules.scss */
+/* line 129, ../sass/partials/_modules.scss */
 nav {
   z-index: 100;
+}
+
+/* line 132, ../sass/partials/_modules.scss */
+textarea {
+  resize: none;
+}
+
+@keyframes vertical-shake {
+  20% {
+    margin-bottom: 0px;
+    margin-top: 40px;
+  }
+  40% {
+    margin-bottom: 35px;
+    margin-top: 5px;
+  }
+  60% {
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  80% {
+    margin-bottom: 25px;
+    margin-top: 15px;
+  }
+  100% {
+    margin-bottom: 15px;
+    margin-top: 25px;
+  }
 }

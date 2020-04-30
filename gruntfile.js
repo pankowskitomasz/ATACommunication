@@ -1,0 +1,53 @@
+module.exports = function(grunt){
+    grunt.initConfig({
+        pkg: grunt.file.readJSON("package.json"),
+        concat:{
+            css:{
+                src:[
+                    "css/bootstrap.min.css",
+                    "css/styles.css"
+                ],
+                dest:"css/styles.concat.css"
+            },
+            js:{
+                src:[
+                    "js/jquery-3.4.1.min.js",
+                    "js/bootstrap.bundle.min.js",
+                    "js/main.js"
+                ],
+                dest:"js/main.concat.js"
+            }
+        },
+        cssmin:{
+            compress:{
+                files:{
+                    "css/styles.min.css":"<%= concat.css.dest %>"
+                }
+            }
+        },
+        uglify:{
+            compress:{
+                files:{
+                    "js/main.min.js":"<%= concat.js.dest %>"
+                }
+            }
+        },
+        copy:{
+            pub:{
+                files:[
+                    {src:"*.html",dest:"pub/public/"},
+                    {src:"*.php",dest:"pub/public/"},
+                    {src:"css/styles.min.css",dest:"pub/public/"},
+                    {src:"fonts/*",dest:"pub/public/"},
+                    {src:"js/main.min.js",dest:"pub/public/"}
+                ]
+            }
+        }
+    });
+    grunt.loadNpmTasks("grunt-contrib-concat");
+    grunt.loadNpmTasks("grunt-contrib-cssmin");
+    grunt.loadNpmTasks("grunt-contrib-uglify");
+    //grunt.loadNpmTasks("grunt-contrib-copy");
+    grunt.registerTask("default",["concat","cssmin","uglify"]);
+    //grunt.registerTask("default",["concat","cssmin","uglify","copy"]);
+};

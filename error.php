@@ -25,10 +25,6 @@
                             rel="noreferrer noopener nofollow">
                                 <span class="fab fa-twitter h3"></span>
                             </a>
-                            <a class="list-inline-item text-white"
-                            href="user.php">
-                                <span class="fas fa-user-circle h3"></span>
-                            </a>
                         </div>
                     </div>
                     <div class="col-12">
@@ -62,18 +58,18 @@
                 </div>
             </div>
         </nav>
-        <section class="container-fluid privacy-s1 d-flex bg-black px-0 overflow-x-hidden">
-            <div class="row m-0">
-                <div class="carousel slide" data-ride="carousel" id="crs-top">
-                    <div class="carousel-inner fixed-size">
-                        <div class="carousel-item active fixed-size">
+        <section class="container-fluid privacy-s1 d-flex bg-black px-0 overflow-x-hidden min-h-50">
+            <div class="row m-0 w-100">
+                <div class="carousel slide w-100" data-ride="carousel" id="crs-top">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
                             <img src="img/carousel-top/crs-top-slide-1.jpg" 
-                                class="fixed-size"
+                                class="w-100 h-50vh fit-cover"
                                 alt="Future city">
                         </div>
-                        <div class="carousel-item fixed-size">
+                        <div class="carousel-item">
                             <img src="img/carousel-top/crs-top-slide-2.jpg" 
-                                class="fixed-size"
+                                class="w-100 h-50vh fit-cover"
                                 alt="Perfume industry">
                             <div class="carousel-caption">
                                 <p class="text-uppercase text-white font-weight-bold">
@@ -81,9 +77,9 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="carousel-item fixed-size">
+                        <div class="carousel-item">
                             <img src="img/carousel-top/crs-top-slide-3.jpg" 
-                                class="fixed-size"
+                                class="w-100 h-50vh fit-cover"
                                 alt="">
                             <div class="carousel-caption">
                                 <p class="text-uppercase text-white font-weight-bold">
@@ -91,9 +87,9 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="carousel-item fixed-size">
+                        <div class="carousel-item">
                             <img src="img/carousel-top/crs-top-slide-4.jpg" 
-                                class="fixed-size"
+                                class="w-100 h-50vh fit-cover"
                                 alt="">
                             <div class="carousel-caption">
                                 <p class="text-uppercase text-white font-weight-bold">
@@ -105,7 +101,7 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid privacy-s2 d-flex py-3 bg-light" id="message">
+        <section class="container-fluid privacy-s2 d-flex py-3 bg-light min-h-50" id="message">
             <div class="row my-auto mx-auto py-5 font-menu px-3">
                 <div class="col-12 col-sm-8 offset-sm-2 text-secondary text-center text-sm-left">
                     <h1 class="h4 text-secondary text-center pb-3">
@@ -156,10 +152,6 @@
                         rel="noreferrer noopener nofollow">
                             <span class="fab fa-twitter h5"></span>
                         </a>
-                        <a class="list-inline-item text-white"
-                        href="user.php">
-                            <span class="fas fa-user-circle h5"></span>
-                        </a>
                     </div>
                     <ul class="list-unstyled initialism font-weight-bold">
                         <li class="list-unstyled-item">
@@ -186,8 +178,10 @@
                 </div>
                 <div class="col-12 text-white text-center border-top border-gray">
                     <small>
-                        Website demo, Copyright &copy; 2020 |
-                        <a href="privacy.html#terms" class="text-white">Privacy</a>
+                        Copyright &copy; 2020-2021 Tomasz Pankowski |
+                        <a href="privacy.html#terms" class="text-white">
+                            Privacy policy
+                        </a>
                     </small>
                 </div>
             </div>

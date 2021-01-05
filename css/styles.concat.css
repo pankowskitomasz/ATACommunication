@@ -96,13 +96,13 @@ body, html {
 }
 
 /* line 15, ../sass/partials/_mixins.scss */
-.index-s2 {
+.index-s4 {
   min-height: 33vh;
 }
 
 /* line 15, ../sass/partials/_mixins.scss */
-.index-s4 {
-  min-height: 33vh;
+.index-s2 {
+  min-height: 25vh;
 }
 
 /* line 2, ../sass/partials/_modules.scss */
@@ -122,49 +122,59 @@ body, html {
   background-size: cover;
 }
 
-/* line 14, ../sass/partials/_modules.scss */
+/* line 15, ../sass/partials/_modules.scss */
+.fit-cover {
+  object-fit: cover;
+}
+
+/* line 19, ../sass/partials/_modules.scss */
 .fixed-size {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
 }
 
-/* line 20, ../sass/partials/_modules.scss */
+/* line 25, ../sass/partials/_modules.scss */
 .font-header {
   font-family: "Acme", sans-serif;
   letter-spacing: 2px;
 }
-/* line 24, ../sass/partials/_modules.scss */
+/* line 29, ../sass/partials/_modules.scss */
 .font-menu {
   font-family: "Mitr", sans-serif;
 }
-/* line 28, ../sass/partials/_modules.scss */
+/* line 33, ../sass/partials/_modules.scss */
 .font-size-35 {
   font-size: 35px;
 }
 
-/* line 33, ../sass/partials/_modules.scss */
+/* line 38, ../sass/partials/_modules.scss */
 .grayscale {
   filter: grayscale(1);
 }
 
-/* line 37, ../sass/partials/_modules.scss */
+/* line 42, ../sass/partials/_modules.scss */
+.h-50vh {
+  height: 50vh;
+}
+
+/* line 47, ../sass/partials/_modules.scss */
 .icon:hover {
   opacity: 0.6;
 }
 
-/* line 44, ../sass/partials/_modules.scss */
+/* line 54, ../sass/partials/_modules.scss */
 .index-s2 a img {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-/* line 48, ../sass/partials/_modules.scss */
+/* line 58, ../sass/partials/_modules.scss */
 .index-s2 a:hover img {
   animation-delay: 0.1s;
   animation-duration: 0.8s;
   animation-name: vertical-shake;
 }
-/* line 55, ../sass/partials/_modules.scss */
+/* line 65, ../sass/partials/_modules.scss */
 .index-s4__left-col {
   background-image: url("../img/at_logo_blanc.png");
   background-position: center center;
@@ -172,79 +182,79 @@ body, html {
   background-size: contain;
 }
 
-/* line 60, ../sass/partials/_modules.scss */
+/* line 70, ../sass/partials/_modules.scss */
 .min-h-50 {
   min-height: 50vh;
 }
 
-/* line 65, ../sass/partials/_modules.scss */
+/* line 75, ../sass/partials/_modules.scss */
 .maxw-75vw {
   max-width: 75vw !important;
 }
 
-/* line 70, ../sass/partials/_modules.scss */
+/* line 80, ../sass/partials/_modules.scss */
 .opacity-9 {
   opacity: 0.9;
 }
 
-/* line 74, ../sass/partials/_modules.scss */
+/* line 84, ../sass/partials/_modules.scss */
 .overflow-x-hidden {
   overflow-x: hidden;
 }
 
-/* line 78, ../sass/partials/_modules.scss */
+/* line 88, ../sass/partials/_modules.scss */
 .shadow-black {
   text-shadow: 0 1px 2px #000;
 }
-/* line 81, ../sass/partials/_modules.scss */
+/* line 91, ../sass/partials/_modules.scss */
 .shadow-box {
   box-shadow: 0 0 4px #333;
 }
-/* line 84, ../sass/partials/_modules.scss */
+/* line 94, ../sass/partials/_modules.scss */
 .shadow-gray {
   text-shadow: 0 1px 2px #aaa;
 }
 
-/* line 90, ../sass/partials/_modules.scss */
+/* line 100, ../sass/partials/_modules.scss */
 .spacer-bg-1 {
   background-image: url("../img/spacer/spacer-bg-1.jpg");
   background-position: center center;
   background-size: cover;
 }
-/* line 93, ../sass/partials/_modules.scss */
+/* line 103, ../sass/partials/_modules.scss */
 .spacer-bg-2 {
   background-image: url("../img/spacer/spacer-bg-2.jpg");
   background-position: center center;
   background-size: cover;
 }
-/* line 96, ../sass/partials/_modules.scss */
+/* line 106, ../sass/partials/_modules.scss */
 .spacer-bg-3 {
   background-image: url("../img/spacer/spacer-bg-3.jpg");
   background-position: center center;
   background-size: cover;
 }
-/* line 99, ../sass/partials/_modules.scss */
+/* line 109, ../sass/partials/_modules.scss */
 .spacer-bg-4 {
   background-image: url("../img/spacer/spacer-bg-4.jpg");
   background-position: center center;
   background-size: cover;
 }
 
-/* line 106, ../sass/partials/_modules.scss */
+/* line 116, ../sass/partials/_modules.scss */
 .text-shadow-black {
   text-shadow: 0 2px 5px black;
 }
-/* line 109, ../sass/partials/_modules.scss */
+/* line 119, ../sass/partials/_modules.scss */
 .text-shadow-gray {
   text-shadow: 0 1px 3px #444;
 }
 
-/* line 114, ../sass/partials/_modules.scss */
+/* line 124, ../sass/partials/_modules.scss */
 .tile {
-  height: 75px;
+  height: 50px;
 }
 
-/* line 118, ../sass/partials/_modules.scss */
+/* line 128, ../sass/partials/_modules.scss */
 .visible-hover {
   cursor: pointer;
   opacity: 0;
@@ -252,17 +262,17 @@ body, html {
   transition-duration: 0.6s;
   transition-timing-function: ease-in-out;
 }
-/* line 119, ../sass/partials/_modules.scss */
+/* line 129, ../sass/partials/_modules.scss */
 .visible-hover:hover {
   opacity: 0.9;
 }
 
-/* line 129, ../sass/partials/_modules.scss */
+/* line 139, ../sass/partials/_modules.scss */
 nav {
   z-index: 100;
 }
 
-/* line 132, ../sass/partials/_modules.scss */
+/* line 142, ../sass/partials/_modules.scss */
 textarea {
   resize: none;
 }
@@ -287,5 +297,13 @@ textarea {
   100% {
     margin-bottom: 15px;
     margin-top: 25px;
+  }
+}
+@media all and (max-width: 767px) {
+  /* line 170, ../sass/partials/_modules.scss */
+  .navbar-collapse {
+    backdrop-filter: blur(15px);
+    border: 1px solid #666;
+    padding: 20px;
   }
 }

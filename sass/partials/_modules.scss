@@ -11,6 +11,11 @@
 .contact-s1__left-col{
     @include set-bg-cover($contact-s1__left-col-bg);
 }
+.fit{
+    &-cover{
+        object-fit: cover;
+    }
+}
 .fixed-size{
     width: 100vw;
     height: 100vh;
@@ -32,6 +37,11 @@
 }
 .grayscale{
     filter: grayscale(1);
+}
+.h{
+    &-50vh{
+        height: 50vh;
+    }
 }
 .icon{
     &:hover{
@@ -154,4 +164,12 @@ textarea{
 		margin-bottom: 15px;
 		margin-top: 25px;
 	}
+}
+
+@media all and (max-width: 767px){
+    .navbar-collapse{
+        backdrop-filter: blur(15px);
+        border: 1px solid #666;
+        padding: 20px;
+    }
 }

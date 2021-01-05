@@ -7,6 +7,7 @@ $font-menu: 'Mitr', sans-serif;
 $height-full: 100vh;
 $height-half: 50vh;
 $height-third: 33vh;
+$height-fourth: 25vh;
 $icon-hover-opacity: 0.6;
 $index-s4__left-col-bg: "../img/at_logo_blanc.png";
 $section-full-height:
@@ -19,8 +20,9 @@ $section-half-height:
     "contact-s2",
     "index-s3";
 $section-third-height:
-    "index-s2",
     "index-s4";
+$section-fourth-height:
+    "index-s2";
 $shadow-black: 0 1px 2px #000;
 $shadow-box: 0 0 4px #333;
 $shadow-gray: 0 1px 2px #aaa;
@@ -30,4 +32,4 @@ $spacer-bg-3: "../img/spacer/spacer-bg-3.jpg";
 $spacer-bg-4: "../img/spacer/spacer-bg-4.jpg";
 $text-shadow-black: 0 2px 5px black;
 $text-shadow-gray: 0 1px 3px $color-dark-gray;
-$tile-height: 75px;
+$tile-height: 50px;

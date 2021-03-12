@@ -128,16 +128,18 @@
                 <div class="col-12 col-sm-6 text-center text-sm-left">
                     <figure class="figure">
                         <img class="figure-img" src="img/logo.png">
-                        <figcaption class="figure-caption text-white">
-                            <small class="initialism">
-                                <span class="font-weight-bold">ATA Communication</span>
-                                <address>
+                        <figcaption class="figure-caption text-white initialism">
+                            <span class="font-weight-bold">
+                                <small>ATA Communication</small>
+                            </span>
+                            <address>
+                                <small>
                                     LONDON, UK<br/>
                                     WA11D1,<br/>
                                     ABC STREET 12<br/>
                                     00 123 456 678
-                                </address>
-                            </small>
+                                </small>
+                            </address>                            
                         </figcaption>
                     </figure>
                 </div>
